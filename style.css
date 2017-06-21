@@ -39,3 +39,20 @@ header {
 i {
   vertical-align: bottom;
 }
+
+.orderMain {
+  height: 1025px;
+}
+
+.textAlignRt {
+  text-align: right;
+}
+
+.textAlignLft {
+  text-align: left;
+}
+
+.myBoarder {
+  display: block;
+  border: 1px dashed black;
+}
