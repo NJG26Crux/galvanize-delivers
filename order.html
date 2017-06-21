@@ -19,7 +19,7 @@
       <nav>
         <div class="nav-wrapper blue darken-2">
           <a href="#" class="brand-logo lft-mar">Galvanize Delivers</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right hide-on-med-and-down blue darken-4">
               <li><a href="sass.html">Order Delivery</a></li>
             </ul>
           </div>
@@ -34,7 +34,7 @@
             <!-- <h5><strong class="lft-mar">Menu</strong></h5> -->
             <!-- <p class="para">Using our convenient web app, you’ll get all the power go gFood without having to call your order in, Order in your pajamas, order 24 hours a day, order on Christmas, we’re here to serve you.</p> -->
             <div class="row">
-              <div class="col s3">
+              <div class="col s4">
                 <div class="box">
                   <h5><strong align="left" class="lft-mar">Menu</strong></h5>
                   <div class="card">
@@ -47,7 +47,7 @@
                       <p>$8.99</p>
                       </div>
                       <div class="card-action">
-                        <a href="#" light red>Add to Oder</a>
+                        <a class="materialize-red-text" href="#">Add to Oder</a>
                       </div>
                     </div>
                     <div class="card">
@@ -60,12 +60,12 @@
                         <p>$14.99</p>
                         </div>
                         <div class="card-action">
-                          <a href="#" light red>Add to Oder</a>
+                          <a class="materialize-red-text" href="#">Add to Oder</a>
                         </div>
                       </div>
                 </div>
               </div>
-              <div class="col s3">
+              <div class="col s4">
                 <div class="box">
                   <h5><strong class="lft-mar textAlignLft"></strong></h5>
                   <div class="card">
@@ -78,7 +78,7 @@
                       <p>$11.99</p>
                       </div>
                       <div class="card-action">
-                        <a href="#" light red>Add to Oder</a>
+                        <a class="materialize-red-text" href="#">Add to Oder</a>
                       </div>
                     </div>
                     <div class="card">
@@ -91,7 +91,7 @@
                         <p>$7.99</p>
                         </div>
                         <div class="card-action">
-                          <a href="#" light red>Add to Order</a>
+                          <a class="materialize-red-text" href="#">Add to Order</a>
                         </div>
                       </div>
                 </div>
@@ -99,13 +99,13 @@
             <!-- </div> -->
           <!-- </div> -->
         <!-- </div> -->
-              <div class="col s5">
+              <div class="col s4">
                 <div class="box">
                   <h5><strong class="lft-mar textAlignLft">Order</strong></h5>
             <!-- <p class="para">You’ve never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you. We’d ask what that is, but gFood respects your privacy.</p> -->
                 </div>
                 <div>
-                  <table class="striped">
+                  <table class="striped p para2">
                     <thead>
                       <tr>
                   <!-- <th>Name</th> -->
@@ -138,7 +138,7 @@
                     </tbody>
                   </table>
                 <div>
-                  <table>
+                  <table class="para2">
                     <tbody>
                       <tr>
                     <!-- <td></td> -->
@@ -162,35 +162,43 @@
                   <!-- <div class="row"> -->
                     <form >
                       <div class="row">
-                        <div class="input-field col s10">
-                          <span class="left-align"><i class="material-icons" light red>account_circle</i>Name</span>
-                          <span class="right-align"><input id="name" type="text" class="validate"></span>
-                          <!-- <label for="name">First Name</label> -->
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix red-text">account_circle</i>
+                          <textarea id="icon_name" type="text" class="materialize-textarea"></textarea>
+                          <label for="icon_name" class="para2">Name</label>
+                        </div>
+                      </div>
+                      <!-- <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix red-text left-align">account_circle</i>
+                          <input id="icon_name" type="text" class="validate right-align">
+                          <label for="icon_name">Name</label>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix red-text left-align">phone</i>
+                          <textarea id="icon_phone" type="tel" class="materialize-textarea validate"></textarea>
+                          <label for="icon_phone">Phone Number</label>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="input-field col s10">
-                          <span class="left-align"><i class="material-icons" light red>phone</i>Phone Number</span>
-                          <span class="right-align"><input id="phone" type="text" class="validate"></span>
-                          <!-- <label for="password">Phone Number</label> -->
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="input-field col s10">
-                          <span class="left-align"><i class="material-icons" light red>business</i>Address</span>
-                          <span class="right-align"><input id="address1" type="text" class="validate"></span>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix red-text left-align">business</i>
+                          <input id="icon_address1" type="text" class="materialize-textarea">
+                          <label for="icon_address1">Address</label>
                         </div>
                         <div class="row">
-                          <div class="input-field col s10">
-                            <span class="left-align"><i class="material-icons" light red></i></span>
-                            <span class="right-align"><input id="address2" type="text" class="validate"></span>
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix red-text eft-align"></i>
+                            <input id="icon_address2" type="text" class="materialize-textarea">
                           </div>
                         </div>
                       </div>
                     </form>
                   </div>
-                  <div>
-                    <a class="center-align btn waves-effect waves-light red">PLACE ORDER</a>
+                  <div class="center-align">
+                    <a class="btn waves-effect waves-light red">PLACE ORDER</a>
                   </div>
                 </div>
               </div>

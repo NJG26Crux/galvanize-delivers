@@ -20,9 +20,17 @@ header {
    /*justify-content: center;*/
 }
 
+.redText {
+  color: red;
+}
+
 .para {
   font-size: small;
+}
 
+.para2 {
+  font-size: x-small;
+  color: grey;
 }
 
 .art {
@@ -36,9 +44,9 @@ header {
   margin-left: 10px;
 }
 
-i {
+/*i {
   vertical-align: bottom;
-}
+}*/
 
 .orderMain {
   height: 1025px;
