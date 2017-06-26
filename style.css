@@ -44,12 +44,30 @@ header {
   margin-left: 10px;
 }
 
-/*i {
-  vertical-align: bottom;
+i {
+  vertical-align: center;
+}
+
+/*a {
+  cursor: pointer;
 }*/
 
+b {
+  cursor: pointer;
+}
+
+.card {
+  margin: 0 0 20px 0 !important;
+}
+
+.blockMain {
+  min-height: 725px ;
+}
+
 .orderMain {
-  height: 1025px;
+  /*min-height: 750px;*/
+  height: auto;
+  vertical-align: top;
 }
 
 .textAlignRt {
@@ -63,4 +81,8 @@ header {
 .myBoarder {
   display: block;
   border: 1px dashed black;
+}
+
+.noPadRt {
+  padding-right:0px !important;
 }
