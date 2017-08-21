@@ -35,7 +35,8 @@
 
   <main class="orderMain valign-wrapper">
     <div class="container col s12">
-      <div class="blockMain row display: inline-block;">
+      <div class="row">
+        <!-- <div class="blockMain row display: inline-block;"> -->
 
         <!-- **********************************************************
 
@@ -63,151 +64,137 @@
             s12 m6 l4
         ********************************************************** -->
 
-        <!-- <div class="row">
-              </div> -->
+        <div class="row col s12 m6 l8">
+          <div class="row col s12">
+            <h4>
+            <strong align="left">Menu</strong>
+          </h4>
+          </div>
 
-
-              <h4><strong align="left">Menu</strong></h4>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/burger.jpg">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p class="name">Royale with Cheese</p>
-                  <p class="price">$8.99</p>
-                </div>
-                <div class="card-action">
-                  <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ribs.jpg">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p class="name">Smoked Swine</p>
-                  <p class="price">$14.99</p>
-                </div>
-                <div class="card-action">
-                  <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/pizza.jpg">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p class="name">Arugula Pie</p>
-                  <p class="price">$11.99</p>
-                </div>
-                <div class="card-action">
-                  <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="img/ice_cream.jpg">
-                </div>
-                <div class="card-content">
-                  <p class="name">Ice Cream Biscuit</p>
-                  <p class="price">$7.99</p>
-                </div>
-                <div class="card-action">
-                  <a class="materialize-red-text addToOder" href="#">Add to Order</a>
-                </div>
-              </div>
-
-
-
-
-        <div class="col s5">
-          <div class="box">
-            <h4><strong>Order</strong></h4>
-
-            <table class="striped p col s12">
-
-              <thead>
-                <tr>
-                  <th class="col s7">Name</th>
-                  <th class="textAlignRt col s4">Price</th>
-                  <th class="col s1"></th>
-                </tr>
-              </thead>
-
-              <tbody id="recieptTBody">
-
-              </tbody>
-
-            </table>
-
-            <div class="row">
-              <div class="col s6 offset-s6">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="textAlignRt">Subtotal</td>
-                      <td id="subtotal" class="textAlignRt">$0.00</td>
-                      <td class="col s1"><b></b></td>
-                    </tr>
-                    <tr>
-                      <td class="textAlignRt">Tax</td>
-                      <td id="tax" class="textAlignRt">$0.00</td>
-                      <td class="col s1"><b></b></td>
-                    </tr>
-                    <tr>
-                      <td class="textAlignRt">Total</td>
-                      <td id="total" class="textAlignRt">$0.00</td>
-                      <td class="col s1"><b></b></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="card col S12 m12 l6">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
             </div>
+            <div class="card-content">
+              <p class="name">Royale with Cheese</p>
+              <p class="price">$8.99</p>
+            </div>
+            <div class="card-action">
+              <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
+            </div>
+          </div>
 
-            <div>
-              <form class="col s12">
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix red-text">account_circle</i>
-                        <input id="icon_name" type="text" class="validate">
-                        <label for="icon_name">Name</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix red-text">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Telephone</label>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="input-field col s12">
-                        <i class="material-icons prefix red-text">business</i>
-                        <textarea id="icon-address" class="materialize-textarea validate"></textarea>
-                        <label class="active" for="icon-address">Address</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </form>
+          <div class="card col S12 m12 l6">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p class="name">Smoked Swine</p>
+              <p class="price">$14.99</p>
+            </div>
+            <div class="card-action">
+              <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
+            </div>
+          </div>
 
-              <div class="center-align col s12">
-                <a class="placeOrder btn waves-effect waves-light red">PLACE ORDER</a>
-              </div>
+          <div class="card col S12 m12 l6">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p class="name">Arugula Pie</p>
+              <p class="price">$11.99</p>
+            </div>
+            <div class="card-action">
+              <a class="materialize-red-text addToOder" href="#">Add to Oder</a>
+            </div>
+          </div>
 
+          <div class="card col S12 m12 l6">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+            </div>
+            <div class="card-content">
+              <p class="name">Ice Cream Biscuit</p>
+              <p class="price">$7.99</p>
+            </div>
+            <div class="card-action">
+              <a class="materialize-red-text addToOder" href="#">Add to Order</a>
             </div>
           </div>
         </div>
 
+        <div class="col s12 m6 l4">
+
+          <h4><strong>Order</strong></h4>
+
+          <table class="striped p">
+            <thead>
+              <tr>
+                <th class="col s7">Name</th>
+                <th class="textAlignRt col s4">Price</th>
+                <th class="col s1"></th>
+              </tr>
+            </thead>
+            <tbody id="recieptTBody"></tbody>
+          </table>
+
+          <div class="col s6 offset-s6">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="textAlignRt">Subtotal</td>
+                  <td id="subtotal" class="textAlignRt">$0.00</td>
+                  <td class="col s1"><b></b></td>
+                </tr>
+                <tr>
+                  <td class="textAlignRt">Tax</td>
+                  <td id="tax" class="textAlignRt">$0.00</td>
+                  <td class="col s1"><b></b></td>
+                </tr>
+                <tr>
+                  <td class="textAlignRt">Total</td>
+                  <td id="total" class="textAlignRt">$0.00</td>
+                  <td class="col s1"><b></b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <div>
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix red-text">account_circle</i>
+                  <input id="icon_name" type="text" class="validate">
+                  <label for="icon_name">Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix red-text">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix red-text">business</i>
+                  <textarea id="icon-address" class="materialize-textarea validate"></textarea>
+                  <label class="active" for="icon-address">Address</label>
+                </div>
+              </div>
+            </form>
+            <div class="center-align col s12">
+              <a id="submitBtn" class="placeOrder btn waves-effect waves-light red">PLACE ORDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -221,8 +208,8 @@
         <div class="col l4 offset-l2 s12">
           <!-- <h5 class="white-text">Links</h5> -->
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
             <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li> -->
             <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
           </ul>

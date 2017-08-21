@@ -40,64 +40,46 @@ $('a').click(function(a){
     subtotal = subtotal.toFixed(2);
     // console.log(subtotal);
     subtotal = Number(subtotal);
-    // console.log(subtotal);
     $( "#subtotal" ).html('$' + subtotal);
 
-    tax = (subtotal * .1);
+    tax = (subtotal * 0.1);
     tax = tax.toFixed(2);
-    // console.log(tax);
     $( "#tax" ).html('$' + tax);
 
     subtotal = Number(subtotal);
     tax = Number(tax);
-    // console.log('**', subtotal);
-    // console.log('**', tax);
     total = (subtotal + tax);
     total = total.toFixed(2);
-    // console.log(total);
     $( "#total" ).html('$' + total);
 
 })
 
 $('tbody').on('click', 'b[type="button"]', function(d){
   var receiptP = $(this).parent().parent().children('.receiptPrice').text();
-  // console.log(receiptP);
 
   receiptP = receiptP.replace('$', '');
-  // console.log(receiptP);
 
   receiptP = Number(receiptP);
-  // console.log(receiptP);
 
   subtotal = subtotal - receiptP;
-  // console.log(subtotal);
 
   subtotal = subtotal.toFixed(2);
-  // console.log(subtotal);
   subtotal = Number(subtotal);
-  // console.log(subtotal);
 
   subtotal = subtotal.toFixed(2);
   $( "#subtotal" ).html('$' + subtotal);
-  // console.log(subtotal);
 
   tax = (subtotal * .1);
   tax = tax.toFixed(2);
   $( "#tax" ).html('$' + tax);
-    // console.log(tax);
 
   subtotal = Number(subtotal);
-  // console.log('**', subtotal);
   tax = Number(tax);
-  // console.log('**', tax);
   total = (subtotal + tax);
-  // console.log(total);
 
   total = Number(total);
-  // console.log(total);
   total = total.toFixed(2);
   $( "#total" ).html('$' + total);
-  // console.log(total);
 
   $(this).closest('tr').remove()
 
