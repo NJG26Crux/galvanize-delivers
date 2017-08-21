@@ -8,14 +8,6 @@ body {
     flex: 1 0 auto;
   }
 
-header {
-  /*background-image: url('http://content.mycutegraphics.com/backgrounds/birthday/happy-birthday-ice-cream-cone-background.gif');
-  background-size: cover;
-  height: 500px;
-  flex-direction: column;
-  justify-content: center;*/
-}
-
 .hero {
   background-image: url(img/hero.jpg);
   background-size: cover;
@@ -27,7 +19,6 @@ header {
 .box {
    height: 50px;
    flex-direction: column;
-   /*justify-content: center;*/
 }
 
 .redText {
@@ -50,17 +41,12 @@ header {
 }
 
 .lft-mar {
-  /*margin: 0px 0px 50px 100px;*/
   margin-left: 10px;
 }
 
 i {
   vertical-align: center;
 }
-
-/*a {
-  cursor: pointer;
-}*/
 
 b {
   cursor: pointer;
@@ -75,7 +61,6 @@ b {
 }
 
 .orderMain {
-  /*min-height: 750px;*/
   height: auto;
   vertical-align: top;
 }
