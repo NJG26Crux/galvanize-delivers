@@ -10,11 +10,10 @@ $(document).ready(function() {
 var subtotal = 0;
 var tax = 0;
 var total = 0;
-var max = 3
-$('a').click(function(a){
+var max = 3;
+$('.addToOder').click(function(a){
     var valueN = $(this).parent().parent().children('.card-content').children('.name').text();
     var valueP = $(this).parent().parent().children('.card-content').children('.price').text();
-    // console.log(valueN, ' ',valueP);
     var $table = $("#recieptTBody");
     var tr = $table.find(">tbody>tr:last");
     if (!tr.length || tr.find(">td").length >= max) {
@@ -26,19 +25,11 @@ $('a').click(function(a){
     tr.append('<td class="col s1"><b type="button"><i class="tiny material-icons prefix red-text">delete_forever</i></b></td>');
 
     var valuePrice = valueP.replace('$', '');
-    // console.log(valuePrice);
-    // console.log(typeof valuePrice)
-
     valuePrice = Number(valuePrice);
-    // console.log(valuePrice);
 
     subtotal = Number(subtotal);
-    // console.log(subtotal);
     subtotal = subtotal + valuePrice;
-    // console.log(subtotal);
-
     subtotal = subtotal.toFixed(2);
-    // console.log(subtotal);
     subtotal = Number(subtotal);
     $( "#subtotal" ).html('$' + subtotal);
 
@@ -52,37 +43,42 @@ $('a').click(function(a){
     total = total.toFixed(2);
     $( "#total" ).html('$' + total);
 
-})
+});
 
 $('tbody').on('click', 'b[type="button"]', function(d){
   var receiptP = $(this).parent().parent().children('.receiptPrice').text();
-
   receiptP = receiptP.replace('$', '');
-
   receiptP = Number(receiptP);
 
   subtotal = subtotal - receiptP;
-
   subtotal = subtotal.toFixed(2);
   subtotal = Number(subtotal);
-
   subtotal = subtotal.toFixed(2);
   $( "#subtotal" ).html('$' + subtotal);
 
-  tax = (subtotal * .1);
+  tax = (subtotal * 0.1);
   tax = tax.toFixed(2);
-  $( "#tax" ).html('$' + tax);
 
+  $( "#tax" ).html('$' + tax);
   subtotal = Number(subtotal);
   tax = Number(tax);
-  total = (subtotal + tax);
 
+  total = (subtotal + tax);
   total = Number(total);
   total = total.toFixed(2);
   $( "#total" ).html('$' + total);
+  $(this).closest('tr').remove();
 
-  $(this).closest('tr').remove()
+});
 
-})
-
-// create place order button with basic validation
+$('#submitBtn').click (function() {
+  if ($('#recieptTBody tr').length == 0) {
+    Materialize.toast('your Order cannot be Empty!', 4000);
+  } else if (icon_name.value.length == 0) {
+    Materialize.toast('the Name field cannot be blank!', 4000);
+  } else if (icon_telephone.value.length == 0) {
+    Materialize.toast('the Telephone field cannot be blank!', 4000);
+  } else if (icon_address.value.length == 0) {
+    Materialize.toast('the Address field cannot be blank!', 4000);
+  } else (Materialize.toast('your Order has been Submitted!', 4000));
+});
